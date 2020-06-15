@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" id="try">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="icon" href="icons8-year-of-rooster-100.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(89, 57, 131);">
+    <div class="header" id="mainheader" style="position: fixed; z-index: 1; width: 100%;" >
+        <h1 style="color: rgb(51, 29, 131);text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">AGE CALCULATOR</h1>
+
+    </div>
+    <br>
+    <div class="row" style="padding-top: 4em;">
+          <div class="col-md-12 col-sm-12">
+              <p style= "color: white; text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif; font-style: oblique;"> 
+                 To know your exact age in Years, Months and Days. Here is a new free and easy Age calculator app.<br>
+                 Just enter your Date of birth(DOB) and the date at which you want to calculate your age and know <br>
+                 your age within seconds......!!!!</p>
+          </div>
+    </div>
+    <br>
+    <br>
+           <div class="container">
+               <div class="row" >
+                   <div class="col-md-6 col-sm-12" >
+                        <h4 style="text-align: center; color: white;">Date of Birth</h4>
+                        <input type="date" id="born" >
+
+                   </div>
+                   <div class="col-md-6 col-sm-12">
+                    <h4 style="text-align: center; color: white;">Age at This Date</h4>
+                    <input type="date" id="end">
+                   </div>
+
+               </div>
+
+               <div class="row">
+                   <div class="col-md-8 col-sm-8">
+
+                   </div>
+                   <div class="col-md-4 col-sm-4">
+                     <input  value= "2" onchange="tick()" type="checkbox" id="tic">
+                     <span style="color: white;"> Today</span>
+                   </div>
+               </div>
+               <br>
+
+               <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    
+                    <button onclick="calc()" class="btn btn-default" style="width: 10em; display: block;margin: auto; background-color: white; color: rgb(89,57,131);font-weight: bolder;" >Calculate</button>
+                    
+                </div>
+               </div>
+               <br>
+               <br>
+               <div class="row">
+                   <div class="col-md-4 col-sm-3"></div>
+                   <div class="col-md-4 col-sm-6" >
+                       <p  style="background-color: white ; text-align: center; width:18em; height:7em; display:block; margin:auto; color:rgb(89, 57, 131);font-weight: bolder;" >
+                           <br><span id= "result" style="font-size:x-large;"></span> 
+                       </p> 
+                       
+                   </div>
+                   <div class="col-md-4 col-sm-3"></div>
+               </div>
+               <br>
+               <div class="row">
+                   <img style="display: block; margin:auto; width:4em " id="refresh" src="icons8-reset-96.png"  onclick="clr()" alt="">
+               </div>
+    </div>
+    <br>
+    <div class="row" style="background-color: white;">
+          <div class= "col-md-4">
+          <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding-left: 10em; font-size: x-large; padding-top: 0.5em; color: rgb(89, 57, 131);">
+              Developed <br>
+              By
+              </p>
+            </div>
+            <div class="col-md-4">
+                <h6 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-top:1em; padding-left:4em; color: rgb(89, 57, 131);">
+                    JISMON STANLY<br> & <br> KAAVIYA MOHAN</h6>
+            </div>
+            <div class="col-md-4">
+             <a href="https://www.instagram.com/jks_marshel/?hl=en">
+            <img  src="icons8-instagram-144.png" alt="" style="width: 2.5em; height: 2.5em; " ><br></a>
+            <a href="https://www.instagram.com/kaaviyamohan96/?hl=en">
+            <img src="icons8-instagram-144.png" alt=""style="width: 2.5em; height: 2.5em;"><br></a>
+
+            </div>
+            </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>
